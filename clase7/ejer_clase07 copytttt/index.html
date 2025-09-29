@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API - Usuarios</title>
+
+    <link href="./img/utnLogo.png" rel="icon" type="image/png" />
+    
+    <!-- Estilos propios -->
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+	<!-- Funciones Propias -->
+    <script src="./constantes.js"></script>
+	<script src="./manejadora.js"></script>
+</head>
+<body>
+
+    <div class = "contenedor">
+        <div id = "listado"></div>
+
+        <div id = "detalle">
+            <h2>Detalle de Usuario</h2>
+            <form>
+                <input type="text" id="inputNombre" placeholder="Nombre"><br>
+                <input type="text" id="inputApellido" placeholder="Apellido"><br>
+                <input type="text" id="inputCorreo" placeholder="Correo"><br>
+                <input type="file" id="inputAvatar">
+                <img id="imgAvatar" src="./img/utnLogo.png" alt="avatar" width="100">
+                <div class="botone">
+                    <button type="submit" id="btnAgregar" class="agregar">Agregar</button>
+                    <button type="submit" id="btnEditar" class = "editar">Editar</button>
+                    <button type="submit" id="btnEliminar" class="eliminar">Eliminar</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+
+    <div id="paginado">
+        <button id="btnAnterior" class="anterior">Anterior</button>
+        <button id="btnSiguiente" class="siguiente">Siguiente</button>
+    </div>
+    
+</body>
+</html>

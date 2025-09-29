@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "jotasones.js"></script>
+    <script type = "text/javascript">
+        if (localStorage.getItem("jotasones") === null)
+        {
+            console.log("No hay nada en el localStorage, se crea");
+            alert("No hay nada en el localStorage, se crea");
+            localStorage.setItem("jotasones", JSON.stringify(jotasones));
+        }
+        else{
+            console.log("Hay algo en el localStorage, se muestra ");
+            alert("Hay algo en el localStorage, se muestra");
+            let jotasones_local = JSON.parse(localStorage.getItem("jotasones"));
+            let obj = {};
+            let i = jotasones.length -1;
+            obj.id = jotasones[i].id +1;
+            obj.valor_1 = jotasones[i].valor_1 +1;
+            obj.valor_2 = jotasones[i].valor_2 +1;
+            jotasones.push(obj);
+
+            console.log(jotasones_local);
+            alert("Jotasones leido: " + JSON.stringify(jotasones));
+        }
+        console.log(jotasones);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../ejercoso2/productos.js"></script>
+</head>
+<body>
+    <script type = "text/javascript">
+        articulo.forEach(e => {
+            if(e.precio % 2 !== 0){
+                e.moneda = "usd";
+            }
+            else{
+                delete e.vencimiento;
+            }
+            console.log(e);
+        });
+    </script>
+    
+</body>
+</html>
