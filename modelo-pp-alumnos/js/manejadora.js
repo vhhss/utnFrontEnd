@@ -174,7 +174,9 @@ function enviarAlumno() {
         .finally(() => toggleSpinner(false));
     };
 
-    reader.readAsDataURL(foto.files[0]);
+    if (foto.files.length > 0) {
+        reader.readAsDataURL(foto.files[0]);
+    }
 }
 
 function validarNombre() {
