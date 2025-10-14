@@ -7,6 +7,11 @@
   {
     "codigo": 2,
     "marca": "marca_dos",
-    "precio": 222
+    "precio": 223
+  },
+  {
+    "codigo": null,
+    "marca": "",
+    "precio": null
   }
 ]
